@@ -3,7 +3,7 @@
 #SBATCH --job-name=hw02_task1
 #SBATCH --output=hw02_task1.out
 #SBATCH --error=hw02_task1.err
-#SBATCH --time=00:30:00
+#SBATCH --time=00:1:00
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=1
 
