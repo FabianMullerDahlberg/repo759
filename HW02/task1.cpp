@@ -17,7 +17,7 @@ int main(int argc, char *argv[]) {
     const std::size_t N = std::strtoull(argv[1], nullptr, 10);
 
     std::mt19937 prng(std::random_device{}());
-    std::uniform_real_distribution<float> dist(-1.0f, 1.0f);  // built once, outside the loop
+    std::uniform_real_distribution<float> dist(-1.0f, 1.0f);  
 
     std::vector<float> in(N), out(N);
     for (auto &x : in) x = dist(prng);
@@ -29,7 +29,7 @@ int main(int argc, char *argv[]) {
 
     std::cout << duration_sec.count() << '\n'<< out[0] << '\n' << out[N-1] << std::endl;
 
-    
+
 }
 // g++ scan.cpp task1.cpp -Wall -O3 -std=c++17 -o task1
 
