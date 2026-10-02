@@ -3,3 +3,6 @@
 !.gitignore
 !HW01/
 !HW01/*
+!HW02
+!HW02/*.h
+!HW02/*.cpp
