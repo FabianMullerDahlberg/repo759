@@ -9,6 +9,6 @@
 g++ task3.cpp msort.cpp -Wall -O3 -std=c++17 -o task3 -fopenmp
 for t in {1..20}
 do
-    ./task3 $((10**6)) $t 
+    ./task3 $((10**6)) $t 512
 done
 
