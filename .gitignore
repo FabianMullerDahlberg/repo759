@@ -12,3 +12,8 @@
 !HW03/*.h
 !HW03/*.sh
 !HW03/*.cpp
+
+!HW04
+!HW04/*.h
+!HW04/task4.sh
+!HW04/*.cpp
