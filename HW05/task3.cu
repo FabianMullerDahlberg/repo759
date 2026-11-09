@@ -30,7 +30,7 @@ int main(int argc, char **argv) {
     cudaMemcpy(dA, hA, sizeof(float) * n, cudaMemcpyHostToDevice);
     cudaMemcpy(dB, hB, sizeof(float) * n, cudaMemcpyHostToDevice);
 
-    const unsigned int threads = 512;
+    const unsigned int threads = 16;
     const unsigned int blocks = (n + threads - 1) / threads;
 
     cudaEvent_t start, stop;
