@@ -8,7 +8,7 @@
 #SBATCH --gpus-per-task=1
 #SBATCH --time=00:10:00
 
-module load cuda
+module load nvidia/cuda/13.0.0 
 nvcc task3.cu vscale.cu -Xcompiler -O3 -Xcompiler -Wall -Xptxas -O3 -std=c++17 -o task3
 
 echo "n,time_ms"
